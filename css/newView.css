@@ -1,0 +1,399 @@
+*{margin:0;padding:0}
+html,body{ font-family:Arial, Helvetica, sans-serif; font-size:12px; width:100%; color:#303030;}
+html{overflow-y:scroll;}
+td{font-size:12px;}
+input{font-size:14px; outline:none;}
+select{font-size:12px;}
+textarea{ overflow:auto; font-size:12px;}
+img{ border:0px;}
+ul,li{list-style-type:none;}
+ul,li,p,div,input,ol{padding:0px; margin:0px;}
+a{text-decoration:none; color:#999999; outline-style:none;}
+a:hover{ color:#ed3445;}
+h1{ font-size:24px;}
+h2{ font-size:18px;}
+h3{ font-size:14px;}
+h4{ font-size:12px;}
+h1,h2,h3,h4{ font-weight: normal;}
+/* 样式归0结束 */
+header{
+    position: absolute;
+    top:0;
+    z-index: 100;
+    width: 100%;
+}
+.container{
+    margin:0 auto;
+    width: 1124px;
+}
+@media screen and (min-width: 1200px){
+
+}
+.height50,.height30 {clear:both;width: 100%}
+.height50 {height: 50px;  }
+.height30 {height: 30px;  }
+/**/
+nav{
+    background-color: rgba(148, 146, 146, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+    border-top: 1px solid rgba(255, 255, 255, 0.62);
+    box-shadow: 1px 1px 5px rgba(226, 223, 223, 0.23);
+}
+.nav:after {
+    content: ' ';
+    display: block;
+    clear:both;
+}
+.nav{
+    display: table;
+    width: auto;
+    margin: 0 auto;
+}
+.nav li{
+    float:left;
+    margin-right: 75px;
+}
+.nav li:last-child{
+    margin-right: 0;
+}
+.nav li a{
+    color:rgba(255, 255, 255, 0.82);
+    display: block;
+    line-height: 50px;
+    padding: 0 10px ;
+    height: 50px;
+    font-size: 18px;
+}
+.nav li a.active{
+    color: #639ef0;
+}
+/**/
+.newView,.bc2,.bc3,.bc4{
+    background-size: 100%;
+    position: relative;
+    color:#fff;
+}
+.newView{
+    background: url(../images/57c5305e28f8b.jpg);
+    height: 750px;
+}
+.mask2,.mask{
+    position: absolute;
+    top:0;right: 0;
+    bottom: 0;left:0;
+}
+.newView .mask{
+    background-color:rgba(0,25,63,0.6);
+}
+/**/
+.main{
+    position: relative;
+    z-index: 99;
+    padding-top:110px;
+}
+.main-top{
+    margin-top:80px;
+}
+.main-mini-top{
+    margin-top:46px;
+}
+.center{
+    text-align: center;
+}
+.title,.link{
+    margin:30px;
+    font-size:3rem;
+}
+.blueBc{
+    color:#fff;
+    background-color: #102242;
+}
+/**/
+.list3:after,.list4:after,.list5:after{
+    content:" ";
+    clear:both;
+    display: block;
+}
+.list4 li{
+    float:left;
+    width: 25%;
+}
+.list4 li .bor,.list5 li .bor,.list3 li .bor{
+    width:88%;
+    margin:0 auto;
+    background-color: #fff;
+    min-height: 50px;
+    overflow: hidden;
+}
+.list3 li .bor{
+    width: 82%;
+}
+.list5 li{
+    float:left;
+    width: 20%;
+}
+.list4 li img,.list5 li img,.list3 li img{
+    width: 100%;
+    display: block;
+}
+.list3 li{
+    float:left;
+    width: 33.333%;
+}
+    /**/
+.imgBc {
+    background: url(../images/bc2.png) fixed no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+}
+/***/
+footer{
+    width: 100%;
+    background: #102242;
+    overflow: hidden;
+    padding-top: 20px;
+}
+footer .container{
+    overflow: hidden
+}
+.foot_left{
+    overflow: hidden;
+}
+.foot_bt {
+    background: url(../image/foot_xian.png) no-repeat left bottom;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+.dizhi p {
+    line-height: 28px;
+    font-size: 14px;
+    color: #fff;
+
+}
+
+/*******Q&A*********/
+.qa-box {width: 80%;margin:0 auto}
+.qa-box .tit{  padding:55px 0 15px;  }
+.qa-box .tit span{  text-align: left;  color: #bebebe; letter-spacing: 0.05rem ;font-size:15px;}
+.qa-box .tit p{ color: #c9ab4f;font-size: 15px;margin-top:6px; }
+
+.bc2{
+    background: url(../images/3D.jpg) fixed 20%;
+    background-size: 100%;
+}
+.bc2 .mask2,.bc3 .mask2,.bc4 .mask2{
+    background-color: rgba(16,34,66,0.7);
+}
+.qa-box .pop-up span{
+    color:#fff;
+    text-shadow: 1px 1px #ddd;
+    text-transform: uppercase;
+}
+.qa-box .pop-up i.circle{
+    display: inline-block;
+    border:1px solid #fff;
+    border-radius: 50%;
+    width: 13px;height: 13px;
+    margin-right: 3px;
+}
+
+.qa-box  .field-item{
+    padding:10px 0;
+}
+.qa-box .qa-form{
+    margin-top:60px;
+    padding-bottom: 50px;
+}
+.qa-body{
+    padding:30px 0;
+}
+.qa-body .media{
+    border-bottom:1px solid #ddd;
+    padding:40px 0;
+}
+.qa-body .media-img{
+    width: 140px;
+    display: table-cell;
+}
+.qa-body .media-img img{
+    width: 100px;
+}
+.qa-body .media-des,.media-other{
+    display: table-cell;
+    vertical-align: top;
+    padding:5px 15px;
+}
+.qa-body .media-des{
+    width: 736px;
+}
+.qa-body .media-other {
+    width:28%;
+}
+.qa-body .media-des .des-tit{
+    font-size: 16px;
+    font-weight: normal;
+    color: #ededed;
+    margin-bottom: 15px;
+}
+.qa-body .media-des .des-ct{
+    line-height:1.4;
+    color: #b1b1b1;
+    font-size: 13px;
+    font-family: "Century Gothic", AppleGothic, sans-serif;
+    padding-bottom: 14px;
+    max-height: 56px;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+}
+.qa-body .media-des .cl{
+    color: #27607d;
+    font-weight: 600;
+    padding-right: 5px;
+
+}
+.qa-body .media-other{
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    background-color: #fff;
+    border:1px solid #ddd;
+}
+.qa-body .media-other .btn{
+    width: 60px;
+    height: 60px;
+    color: #507588;
+}
+.qa-body .media-other .btn:first-child{
+   margin-right: 10px;
+}
+.qa-body .media-other .btn .btn-f{
+    display: block;
+}
+.qa-body .media-other .btn .btn-num{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+/*schedule-a-demo.html*/
+.field-item p{
+    font: 15px/28px 'GraphikRegular',sans-serif;
+    color: #a2a2a2;
+    padding: 6px 0;
+}
+.main form>div{
+    margin:25px 0;
+}
+.main form label{
+    display: inline-block;
+    font-size: 13px ;
+    font-weight: 600;
+    letter-spacing: 0 ;
+    width: 15%;
+}
+.main form input,.main form select,.main form textarea{
+    width: 84%;
+    border:none;
+    background-color: rgba(100, 113, 134, 0);
+    color:#fff;
+    box-sizing: border-box ;
+    height: 40px;
+    border-bottom: 1px dotted #ccc ;
+    padding: 10px ;
+    font: 14px/20px 'OpenSansRegular',Arial,sans-serif ;
+}
+.main form textarea{
+    height: auto;
+}
+.main form  .btn{
+    padding:12px 40px;
+    background-color:rgba(1, 106, 171, 0);
+    color:#fff;
+}
+span.red{
+    color: #f05255;
+    margin-right: 5px;
+    font-size: 17px;
+}
+/***/
+.bc3{
+    background: url(../images/sergey-zolkin-192937.jpg) fixed no-repeat;
+    background-size: 100%;
+}
+.bc4{
+    background: url(../images/bc4.jpg) fixed no-repeat;
+    background-size: 100%;
+}
+.titBox h3{
+    margin-bottom:15px;
+    text-transform: uppercase;
+}
+.titBox h1,.titBox h2{
+    margin-bottom:10px;
+}
+.titBox p{
+    line-height: 1.6;
+    letter-spacing: 0.02rem;
+}
+.bor .bor-ct{
+    margin-top:15px;
+    margin-bottom:20px;
+}
+.bor .bor-ct .bor-line{
+    margin-bottom:20px;
+}
+.bor .bor-ct .bor-tit{
+    margin-bottom:30px;
+}
+.bor .bor-ct .bor-text{
+    padding:0 40px;
+    height: 95px;
+    overflow: hidden;
+    line-height: 1.6;
+}
+.anim{
+    transition:all 400ms linear;
+}
+.anim:hover{
+    transform: translate3d(0,-15px,3px);
+    box-shadow: 1px 1px 6px #fff,2px 2px 12px #c5c5c5, 2px 2px 14px #787878,1px 2px 16px #000;
+
+}
+/***/
+.ease{
+    margin:10px  0 15px;
+}
+.ease h3{
+    color: #000;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.show {
+    position: relative;
+}
+.show img{
+    display: block
+}
+.show:hover .mask{
+    transform: translateY(0);
+    transition:all 500ms linear;
+}
+.show .mask{
+    background-color: rgba(16, 34, 66, 0.80);
+    transform: translateY(167px);
+    color:#fff;
+    font-weight: 600;
+}
+.show .mask div{
+    padding:0 15px;
+    line-height: 2.8;
+    margin-top:15px
+}
+
