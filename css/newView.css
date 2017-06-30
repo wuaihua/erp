@@ -62,7 +62,7 @@ nav{
     line-height: 50px;
     padding: 0 10px ;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .nav li a.active{
     color: #639ef0;
@@ -100,9 +100,24 @@ nav{
 .center{
     text-align: center;
 }
-.title,.link{
+.title{
     margin:30px;
     font-size:3rem;
+}
+.link{
+    display: inline-block;
+    margin-top:20px;
+    font-size: 2rem;
+    color: #f9efff;
+    padding:10px 20px;
+    letter-spacing: 0.08rem;
+    border-radius: 6px;
+    border:1px solid  rgba(255, 255, 255, 0.26);
+    box-shadow:1px 1px 8px 3px rgba(196, 212, 211, 0.6)
+}
+.link:hover{
+    border-color: rgba(255, 123, 98, 0.26);
+    box-shadow:1px 1px 8px 3px rgba(212, 203, 193, 0.6)
 }
 .blueBc{
     color:#fff;
@@ -132,9 +147,13 @@ nav{
     float:left;
     width: 20%;
 }
-.list4 li img,.list5 li img,.list3 li img{
+.list4 li img,.list3 li img{
     width: 100%;
     display: block;
+}
+.list5 li img{
+    position: relative;
+    left:-34%;
 }
 .list3 li{
     float:left;
@@ -145,6 +164,9 @@ nav{
     background: url(../images/bc2.png) fixed no-repeat;
     background-size: 100%;
     min-height: 600px;
+}
+.imgBc .list5 li .bor{
+    border:1px solid #ccc;
 }
 /***/
 footer{
@@ -175,7 +197,7 @@ footer .container{
 }
 
 /*******Q&A*********/
-.qa-box {width: 80%;margin:0 auto}
+.qa-box {width: 88%;margin:0 auto}
 .qa-box .tit{  padding:55px 0 15px;  }
 .qa-box .tit span{  text-align: left;  color: #bebebe; letter-spacing: 0.05rem ;font-size:15px;}
 .qa-box .tit p{ color: #c9ab4f;font-size: 15px;margin-top:6px; }
@@ -376,6 +398,9 @@ span.red{
 .show {
     position: relative;
 }
+.show .ease{
+    font-size: 14px;
+}
 .show img{
     display: block
 }
@@ -383,15 +408,20 @@ span.red{
     transform: translateY(0);
     transition:all 500ms linear;
 }
+.show:hover [data-anim="1"]{
+    transform: translateY(215px);
+    transition:all 500ms linear;
+}
 .show .mask{
     background-color: rgba(16, 34, 66, 0.80);
-    transform: translateY(167px);
+    transform: translateY(215px);
     color:#fff;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 .show .mask div{
     padding:0 15px;
     line-height: 2.8;
-    margin-top:15px
 }
 
