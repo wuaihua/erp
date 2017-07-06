@@ -10,8 +10,8 @@ ul,li{list-style-type:none;}
 ul,li,p,div,input,ol{padding:0px; margin:0px;}
 a{text-decoration:none; color:#999999; outline-style:none;}
 a:hover{ color:#ed3445;}
-h1{ font-size:24px;}
-h2{ font-size:18px;}
+h1{ font-size:30px;}
+h2{ font-size:22px;}
 h3{ font-size:14px;}
 h4{ font-size:12px;}
 h1,h2,h3,h4{ font-weight: normal;}
@@ -24,7 +24,7 @@ header{
 }
 .container{
     margin:0 auto;
-    width: 1124px;
+    width: 1150px;
 }
 @media screen and (min-width: 1200px){
 
@@ -33,12 +33,6 @@ header{
 .height50 {height: 50px;  }
 .height30 {height: 30px;  }
 /**/
-nav{
-    background-color: rgba(148, 146, 146, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.62);
-    border-top: 1px solid rgba(255, 255, 255, 0.62);
-    box-shadow: 1px 1px 5px rgba(226, 223, 223, 0.23);
-}
 .nav:after {
     content: ' ';
     display: block;
@@ -62,10 +56,63 @@ nav{
     line-height: 50px;
     padding: 0 10px ;
     height: 50px;
-    font-size: 16px;
+    font-size: 15px;
+    position: relative;
 }
-.nav li a.active{
-    color: #639ef0;
+.nav li a:hover span:not(.showline){
+    right: 0;
+    /*transition: all 300ms ease-in-out;*/
+    animation:line 200ms  alternate;
+    -webkit-animation:line 200ms  alternate ;
+    -moz-animation:line 200ms  alternate ;
+    -o-animation:line 200ms  alternate ;
+    -ms-animation:line 200ms  alternate ;
+}
+.nav li a span{
+    position: absolute;
+    bottom: -1px;
+    left:0;
+    right:100%;
+    height: 1px;
+    background-color:#fff;
+}
+.nav li a span.showline{
+    right: 0;
+}
+@keyframes line
+{
+    0% {  right:100%;}
+    80% {right: -2%;}
+    100%{right: 0;}
+}
+@-ms-keyframes line {
+    0% {
+        right: 100%;
+    }
+    80% {
+        right: -2%;
+    }
+    100% {
+        right: 0;
+    }
+}
+@-moz-keyframes  line
+{
+    0% {  right:100%;}
+    80% {right: -2%;}
+    100%{right: 0;}
+}
+@-webkit-keyframes  line
+{
+    0% {  right:100%;}
+    80% {right: -2%;}
+    100%{right: 0;}
+}
+@-o-keyframes  line
+{
+    0% {  right:100%;}
+    80% {right: -2%;}
+    100%{right: 0;}
 }
 /**/
 .newView,.bc2,.bc3,.bc4{
@@ -136,24 +183,25 @@ nav{
 .list4 li .bor,.list5 li .bor,.list3 li .bor{
     width:88%;
     margin:0 auto;
-    background-color: #fff;
     min-height: 50px;
     overflow: hidden;
 }
 .list3 li .bor{
     width: 82%;
+    background-color: #fff;
 }
 .list5 li{
     float:left;
     width: 20%;
 }
 .list4 li img,.list3 li img{
-    width: 100%;
+    margin:0 auto;
     display: block;
 }
 .list5 li img{
     position: relative;
-    left:-34%;
+
+    width: 100%;
 }
 .list3 li{
     float:left;
@@ -356,7 +404,7 @@ span.red{
     text-transform: uppercase;
 }
 .titBox h1,.titBox h2{
-    margin-bottom:10px;
+    margin-bottom:16px;
 }
 .titBox p{
     line-height: 1.6;
@@ -367,16 +415,20 @@ span.red{
     margin-bottom:20px;
 }
 .bor .bor-ct .bor-line{
-    margin-bottom:20px;
+    margin-bottom:40px;
+    color:#fff;
 }
 .bor .bor-ct .bor-tit{
     margin-bottom:30px;
 }
 .bor .bor-ct .bor-text{
-    padding:0 40px;
-    height: 95px;
+    padding:0 22px;
     overflow: hidden;
+    font-size: 13px;
     line-height: 1.6;
+    color: #fff;
+    letter-spacing: 0.08rem;
+    font-family: "Century Gothic", "CenturyGothic-Regular", CenturyGothic, AppleGothic, sans-serif;
 }
 .anim{
     transition:all 400ms linear;
@@ -402,7 +454,8 @@ span.red{
     font-size: 14px;
 }
 .show img{
-    display: block
+    display: block;
+    width: 100%;
 }
 .show:hover .mask{
     transform: translateY(0);
