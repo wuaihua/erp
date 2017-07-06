@@ -207,6 +207,9 @@ header{
     float:left;
     width: 33.333%;
 }
+.list3 li img{
+    width: 100%;
+}
     /**/
 .imgBc {
     background: url(../images/bc2.png) fixed no-repeat;
