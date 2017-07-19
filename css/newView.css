@@ -68,7 +68,7 @@ header{
     -o-animation:line 200ms  alternate ;
     -ms-animation:line 200ms  alternate ;
 }
-.nav li a span{
+.nav li a span.line{
     position: absolute;
     bottom: -1px;
     left:0;
@@ -143,6 +143,22 @@ header{
 }
 .main-mini-top{
     margin-top:46px;
+}
+.main-mini-top .list4 .pos{
+    height:220px;
+    overflow: hidden;
+}
+.main-mini-top .list4 .pos  img{
+    position: relative;
+    top:-28%;
+    left:-28%;
+}
+.main-mini-top .list4 .bor .pos-txt{
+    font-size: 15px;
+    position: relative;
+    color:#fff;
+    text-align: center;
+    top:-61%;
 }
 .center{
     text-align: center;
@@ -312,7 +328,7 @@ footer .container{
     margin-bottom: 15px;
 }
 .qa-body .media-des .des-ct{
-    line-height:1.4;
+    line-height:1.6;
     color: #b1b1b1;
     font-size: 13px;
     font-family: "Century Gothic", AppleGothic, sans-serif;
@@ -477,7 +493,7 @@ span.red{
     align-items: center;
 }
 .show .mask div{
-    padding:0 15px;
-    line-height: 2.8;
+    padding:0 10px;
+    line-height: 1.8;
 }
 
